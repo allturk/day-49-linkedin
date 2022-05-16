@@ -8,8 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, InvalidSelectorException, StaleElementReferenceException
 from selenium.common.exceptions import TimeoutException
 
-user = os.getenv("LINK_USER")
-pas = os.getenv("LINK_PASS")
+user = os.getenv("LINK_USER") #getting linked in user from env
+pas = os.getenv("LINK_PASS") #getting linked in password from env
 
 s = Service(executable_path=r"c:\Development\chromedriver.exe")
 browser = webdriver.Chrome(service=s)
